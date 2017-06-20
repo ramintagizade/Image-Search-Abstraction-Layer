@@ -70,7 +70,7 @@ function get(url,callback){
   });
   request.on('response', function (response) {
     var data = "";
-    console.log("wtf");
+    console.log("response on");
     response.on('data', function (chunk) {
       data += chunk;
     });
