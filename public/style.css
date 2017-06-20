@@ -1,0 +1,42 @@
+#box{
+  width: 780px;
+  background-color: gray;
+  margin-left: 230px;
+  border-radius: 5px;
+}
+#engine-name{
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+#stories p{
+  font-size: 1.1em;
+  font-weight: bold;
+}
+#content{
+  margin-left: 50px;
+}
+#example{
+  margin-left: -20px;
+}
+#example li{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.link{
+  color: #c7256e;
+}
+.request{
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.response{
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.json{
+  width: 650px;
+  background-color: #34495e;
+  overflow-x:scroll;
+  white-space: nowrap;
+}

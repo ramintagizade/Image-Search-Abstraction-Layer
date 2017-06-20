@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <title> Image Search Abstraction Layer </title>
+  <head>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div id="container">
+      <div id="box">
+        <div id="engine-name"> Image Search Abstraction Layer </div>
+        <div id="content">
+          <div id="stories">
+            <p> User stories : </p>
+            <ul>
+              <li> I can get the image URLs, alt text and page urls for a set of images relating to a given search string. </li>
+              <li> I can paginate through the responses by adding a ?offset=2 parameter to the URL.</li>
+              <li> I can get a list of the most recently submitted search strings.</li>
+            </ul>
+          </div>
+
+          <div id="example">
+            <ol>
+              <li>Image search:</li>
+              <p class="request">- Request example:</p>
+              <p class="link" style="padding-left:20px"> <a href="https://image-search-abstraction-layer-ramin.glitch.me/api/search?q=manchester"><i>https://image-search-abstraction-layer-ramin.glitch.me/api/search?q=manchester</i></a> </p>
+              <p class="response">- Response example:</p>
+              <div class="json">
+                { <br>
+                  &nbsp; "items": [ <br>
+                  &nbsp; {
+                     <br>&nbsp;&nbsp; "link": "http://www.manchester.ac.uk/Manchester-Skyline-2.jpg",
+                     <br>&nbsp;&nbsp; "snippet": "The University of Manchester",
+                     <br>&nbsp;&nbsp; "image": {
+                      <br>&nbsp;&nbsp;&nbsp;&nbsp; "contextLink": "'http://www.manchester.ac.uk/",
+                      <br>&nbsp;&nbsp;&nbsp;&nbsp; "thumbnailLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbrKTKQe0BIOJHHcHdLGryEj_TMrZs2W4osXCYc7UTZQtSGdwm991KzdA"
+                     <br>&nbsp;&nbsp; }
+                   <br>&nbsp;},
+                   <br>&nbsp; .....
+                <br> }
+              </div> <br>
+              <li>Recent search log:</li>
+              <p class="request">- Request example:</p>
+              <p class="link" style="padding-left:20px"> <a href="https://image-search-abstraction-layer-ramin.glitch.me/api/recent" ><i>https://image-search-abstraction-layer-ramin.glitch.me/api/recent</i></a> </p>
+              <p class="response">- Response example:</p>
+              <div class="json" style="line-height:30px;vertical-align: middle">
+                [{"_id":"5949875fa9c0f924f5fd492a","query":"code","when":"2017-06-20T20:36:47.756Z"},{"_id":"59498754a9c0f924f5fd4929","query":"soccer","when":"2017-06-20T20:36:36.472Z"},{"_id":"59498748a9c0f924f5fd4928","query":"manchester","when":"2017-06-20T20:36:24.191Z"}]
+              </div>
+            </ol>
+          </div>
+        </div> <br>
+      </div>
+    </div>
+  </body>
+</html>
